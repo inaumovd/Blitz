@@ -30,10 +30,17 @@ a {
 	margin: 0 auto;
 }
 
+.header-decor {
+	display: block;
+	width: 100%;
+	height: 7px;
+	background-image: url("../img/top-line.jpg");
+	background-color: #f9f9f9;
+}
+
 .page-header {
 	margin-bottom: 40px;
 	padding: 0 2px;
-	border-top: 7px solid #f7f7f7;
 }
 
 .main-nav {
@@ -71,7 +78,7 @@ a {
 .nav a:hover::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -2px;
 	left: 50% ;
 	width: 19px;
 	height: 12px;
@@ -96,16 +103,51 @@ a {
 }
 
 .carusel {
+	position: relative;
 	height: 425px;
 	background-color: #555554;
 }
 
+.carusel-promo {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 12px 17px;
+	background-color: #333232;
+	text-transform: uppercase;
+}
+
+.carusel-promo h3{
+	margin: 0 0 5px 0;
+	font-size: 14px;
+	color: #9a9a9a;
+}
+
+.carusel-promo span{
+	font-size: 28px;
+	color: #ffffff;
+}
+
 .news-text {
-	padding: 0 17px;
+	position: relative;
+	padding: 22px 17px;
+	background-image: url("../img/background-2.jpg");
+}
+
+.news-text::before {
+	content: "";
+	position: absolute;
+	top: -11px;
+	left: 50% ;
+	width: 26px;
+	height: 13px;
+	margin-left: -13px;
+	background-image: url("../img/indicator.png");
+	background-repeat: no-repeat;
 }
 
 .news-text h3{
-margin: 22px 0 13px 0;
+margin: 0 0 13px 0;
 font-size: 16px;
 line-height: 21px;
 }
@@ -150,6 +192,15 @@ line-height: 14px;
 	background-repeat: no-repeat;
 }
 
+.feature-item:nth-child(2) h3::before {
+	background-image: url("../img/star.png");
+}
+
+.feature-item:nth-child(3) h3::before {
+	width: 50px;
+	background-image: url("../img/message.png");
+}
+
 .feature-item p {
 	margin: 0 0 16px 0;
 	font-size: 12px;
@@ -183,6 +234,7 @@ line-height: 14px;
 .title-decor {
 	width: 377px;
 	height: 29px;
+	background-image: url("../img/decor.jpg");
 	background-color: #f9f9f9;
 }
 
@@ -235,6 +287,7 @@ line-height: 14px;
 	display: block;
 	width: 100%;
 	height: 5px;
+	background-image: url("../img/decor-line.jpg");
 	background-color: #f9f9f9;
 }
 
@@ -242,4 +295,5 @@ line-height: 14px;
 	padding: 20px 3px 30px 3px;
 	display: flex;
 	justify-content: space-between;
+	background-image: url("../img/background-2.jpg");
 }
